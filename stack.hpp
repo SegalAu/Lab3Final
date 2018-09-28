@@ -27,12 +27,12 @@ public:
     //function to pop elements off stack
     void pop();
     //Function that returns top element of stack
-    int top();
+    const int top();
     //Function that returns true if stack is empty (false otherwise)
-    bool empty();
+    const bool empty();
     //Function that returns true if stack is full (false otherwise)
-    bool full();
+    const bool full();
     //Function that prints the full stack onto screen (up to top element index)
-    void print();
+    const void print();
 
 };

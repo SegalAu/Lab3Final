@@ -54,7 +54,7 @@ void StackClass::pop(){
  * @return - value that is stored at the top of the stack
  */
 
-int StackClass::top(){
+const int StackClass::top(){
     return Array[curTop];
 }
 
@@ -62,7 +62,7 @@ int StackClass::top(){
  * @param - none
  * @return - boolean, whether stack is empty or not
  */
-bool StackClass::empty() {
+const bool StackClass::empty() {
     return (curTop == -1);
 }
 
@@ -70,7 +70,7 @@ bool StackClass::empty() {
  * @param - none
  * @return - boolean, whether stack is full or not
  */
-bool StackClass::full(){
+const bool StackClass::full(){
     return(curTop == MAX_SIZE -1);
 }
 
@@ -80,7 +80,7 @@ bool StackClass::full(){
  *
  */
 
-void StackClass::print(){
+const void StackClass::print(){
     cout << "Stack result : " << endl;
     if(curTop != -1 || curTop != 0){
         for(int i = 0; i <= curTop; i++){
