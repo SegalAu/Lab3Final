@@ -15,6 +15,25 @@ TEST_CASE("A new stack is empty", "[stack")
     REQUIRE(stack.full() == false);
 }
 
+TEST_CASE("A stack with 1 element is not empty", "[stack")
+{
+    StackClass stack;
+
+    REQUIRE(stack.empty() == true);
+    REQUIRE(stack.full() == false);
+
+    REQUIRE(stack.push(1));
+    REQUIRE(stack.empty() == false);
+    REQUIRE(stack.full() == false);
+
+    stack.pop();
+    REQUIRE(stack.empty());
+    REQUIRE(stack.full() == false);
+
+}
+
+
+
 
 TEST_CASE("Add 10 elements", "[stack")
 {

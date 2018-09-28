@@ -12,17 +12,27 @@
 
 class StackClass
 {
+
 private:
+    //Private variables
+    // Array that represents stack
     int Array[MAX_SIZE];
+    // Index of current top element in stack
     int curTop;
 public:
     //contructor
     StackClass();
+    //function to push elements to top of stack
     bool push(int val);
+    //function to pop elements off stack
     void pop();
+    //Function that returns top element of stack
     int top();
+    //Function that returns true if stack is empty (false otherwise)
     bool empty();
+    //Function that returns true if stack is full (false otherwise)
     bool full();
+    //Function that prints the full stack onto screen (up to top element index)
     void print();
 
 };
